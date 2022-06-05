@@ -17,10 +17,10 @@ const init = async () => {
           const timestamp = Timestamp.fromDate(new Date());
           const { type = 'Tidak Ada', temp = 0, humidity = 0 } = request.query;
 
-          const docRef = await db.collection('results').add({
+          await db.collection('results').add({
             type: 'Akar',
-            temp,
-            humidity,
+            temp: Math.floor(Math.random() * 100),
+            humidity: Math.floor(Math.random() * 100),
             createdAt: timestamp,
           });
           return {
