@@ -1,18 +1,24 @@
 {
   "name": "backend-monitoring-simplisia",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This example is so cool.",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
     "@hapi/nes": "^12.0.4",
     "firebase-admin": "^10.2.0"
+  },
+  "engines": {
+    "node": "14.19.1"
   }
 }
