@@ -11,7 +11,7 @@
     "example",
     "heroku"
   ],
-  "author": "",
+  "author": "Agung Fir",
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
