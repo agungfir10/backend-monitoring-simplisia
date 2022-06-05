@@ -5,7 +5,6 @@ const db = require('./firebase');
 const init = async () => {
   const server = Hapi.server({
     port: process.env.PORT || 3000,
-    host: process.env.HOST || 'localhost',
   });
 
   server.route([
@@ -24,6 +23,10 @@ const init = async () => {
             humidity,
             createdAt: timestamp,
           });
+          return {
+            status: 'success',
+            message: 'success add datas',
+          };
         } catch (error) {
           return {
             status: 'fail',

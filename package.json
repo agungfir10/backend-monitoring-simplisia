@@ -4,11 +4,10 @@
   "description": "This example is so cool.",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon main.js",
-    "start": "node main.js"
+    "dev": "nodemon main.js"
   },
   "keywords": [
-    "example",
+    "hapi js",
     "heroku"
   ],
   "author": "Agung Fir",
